@@ -32,13 +32,21 @@ void display()
 {
     if(isEmpty()==false)
     {
-        for(int i=0; i<siz; i++)
+        for(int i=head; i<=tail; i++)
         {
             cout<<value[i]<<" ";
         }
         cout<<endl;
     }
 
+}
+void reverseDisplay(){
+if(isEmpty()==false){
+    for(int i=tail; i>=head; i--){
+        cout<<value[i]<<" ";
+    }
+    cout<<endl;
+}
 }
 void dequeu()
 {
@@ -73,10 +81,16 @@ int main()
     enqueu(20);
     enqueu(30);
     enqueu(40);
+    display();
+    reverseDisplay();
     enqueu(50);
     enqueu(60);
+    display();
+    reverseDisplay();
     dequeu();
     dequeu();
+    display();
+    reverseDisplay();
     dequeu();
     dequeu();
     dequeu();
