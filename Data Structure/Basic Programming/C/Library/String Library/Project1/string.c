@@ -149,7 +149,7 @@ for(int i=start; i<=start2; i++){
 }
 text[j] = '\0';
 }
-//10) Strreplace
+//Replace
 void Strreplace(char str[], char old[], char new[]){
     int i=0, j, k;
 
@@ -176,3 +176,4 @@ void Strreplace(char str[], char old[], char new[]){
         i++;
     }
 }
+

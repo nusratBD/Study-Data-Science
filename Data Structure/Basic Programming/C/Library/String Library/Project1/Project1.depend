@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1777070258 source:c:\users\user\documents\data science\data structure\basic programming\c\library\string library\project1\string.c
+	"string.h"
+
+1777070288 c:\users\user\documents\data science\data structure\basic programming\c\library\string library\project1\string.h
+
+1777075777 source:c:\users\user\documents\data science\data structure\basic programming\c\library\string library\project1\main.c
+	<stdio.h>
+	"string.h"
+
