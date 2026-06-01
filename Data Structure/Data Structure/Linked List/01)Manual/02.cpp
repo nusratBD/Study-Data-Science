@@ -14,4 +14,10 @@ third->data=30;
 first->next=second;
 second->next=third;
 third->next=NULL;
+Node *head=first;
+Node *temp=head;
+while(temp!=NULL){
+    cout<<temp<<": "<<temp->data<<endl;
+    temp=temp->next;
+}
 }
