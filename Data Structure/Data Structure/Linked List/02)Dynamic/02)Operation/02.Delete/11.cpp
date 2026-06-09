@@ -84,4 +84,6 @@ int main()
     display();
     dlt(3);
     display();
+    dlt(5);
+    display();
 }
