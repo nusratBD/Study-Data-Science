@@ -74,6 +74,8 @@ void dlt(int value)
 }
 int main()
 {
+    dlt(2);
+    display();
     add(1);
     add(2);
     add(3);
