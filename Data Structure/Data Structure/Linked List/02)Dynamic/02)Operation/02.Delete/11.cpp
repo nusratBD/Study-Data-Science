@@ -63,8 +63,11 @@ void dlt(int value)
             {
                 cout<<value<<" doesn't exist to the list." <<endl;
             }
-            Node *y=x->next->next;
-            x->next=y;
+            else
+            {
+                Node *y=x->next->next;
+                x->next=y;
+            }
         }
     }
     else
