@@ -1,0 +1,31 @@
+Insertion Criteria:
+
+1) Insert at head:
+a) list empty থাকলে
+b) list এ ভ্যালু থাকলে
+
+2) Insert at tail:
+a) list empty থাওলে
+b) list এ ভ্যালু থাকলে
+
+3) Insert after target node:
+a) Target Node list এ না থাকলে
+b) Target Node list এর শেষে থাকলে tail_insertion হবে
+c) Target Node list এর মাঝের দিকে থাকলে
+
+Node Deletion Criteria:
+
+1)Delete from tail:
+a) Multiple Element থাকলে কিভাবে ডিলিট হবে। 
+b) ১টা মাত্র ইলিমেন্ট থাকলে কিভাবে ডিলিট হবে। 
+
+2) Delete from head:
+a) Multiple Element থাকলে কিভাবে ডিলিট হবে। 
+b) ১টা মাত্র ইলিমেন্ট থাকলে কিভাবে ডিলিট হবে। 
+
+3) Delete a specific value from the list:
+a) value টা লিস্টে না থাকলে কি হবে
+b) value টা লিস্টের মাঝের দিকে থাকলে কিভাবে ডিলিট হবে
+c) value টা tail এ থাকলে কিভাবে ডিলিট হবে
+d) value টা head এ থাকলে কিভাবে ডিলিট হবে
+e) value টা লিস্টের একমাত্র ইলিমেন্ট হলে কিভাবে ডিলিট হবে।
