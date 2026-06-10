@@ -1,0 +1,112 @@
+BST (Binary Search Tree) Insertion Rules
+Rule 1 নতুন Node তৈরি করো
+
+প্রথমে নতুন node তৈরি করতে হবে এবং তার data, left, right initialize করতে হবে।
+
+Node newNode = new Node();
+newNode-data = value;
+newNode-left = NULL;
+newNode-right = NULL;
+Rule 2 Tree খালি হলে
+
+যদি root == NULL হয়, তাহলে নতুন node-টাই root হবে।
+
+if(root == NULL)
+{
+    root = newNode;
+}
+Rule 3 Root থেকে Traversal শুরু করো
+
+Tree খালি না হলে traversal শুরু করতে হবে।
+
+Node parent = root;
+Node current = NULL;
+Rule 4 প্রতিটি Node-এ Compare করো
+
+Traversal করার সময় প্রতিটি node-এ value compare করতে হবে।
+
+যদি value  parent-data হয় → Left-এ যাও।
+অন্যথায় → Right-এ যাও।
+if(value  parent-data)
+{
+    current = parent;
+    parent = parent-left;
+}
+else
+{
+    current = parent;
+    parent = parent-right;
+}
+Rule 5 NULL পাওয়া পর্যন্ত চলতে থাকো
+
+যতক্ষণ parent != NULL, ততক্ষণ compare করে বামে বা ডানে যেতে হবে।
+
+while(parent != NULL)
+{
+    ...
+}
+
+parent == NULL মানে তুমি এমন একটি খালি জায়গায় পৌঁছেছ যেখানে নতুন node বসানো যাবে।
+
+Rule 6 শেষ Valid Node মনে রাখো
+
+Traversal-এর সময় current-এ সবসময় শেষ valid node-এর address রাখতে হবে।
+
+উদাহরণ
+
+      50
+     
+    30
+      
+       40
+
+যদি 35 insert করো, তাহলে শেষে
+
+current = 40
+parent = NULL
+
+হবে।
+
+Rule 7 নতুন Node Attach করো
+
+Traversal শেষে আবার compare করতে হবে।
+
+যদি value  current-data হয় → current-left = newNode
+অন্যথায় → current-right = newNode
+if(value  current-data)
+{
+    current-left = newNode;
+}
+else
+{
+    current-right = newNode;
+}
+পুরো অ্যালগরিদম (সহজ ভাষায়)
+১. নতুন node তৈরি করো।
+
+২. যদি Tree খালি হয়,
+      Root = নতুন node।
+
+৩. নাহলে Root থেকে শুরু করো।
+
+৪. যতক্ষণ Current Node NULL না হয়
+      যদি Value ছোট হয় → Left-এ যাও।
+      নাহলে → Right-এ যাও।
+      শেষ valid node মনে রাখো।
+
+৫. Loop শেষ হলে,
+      যদি Value ছোট হয় → Last Node-এর Left-এ বসাও।
+      নাহলে → Last Node-এর Right-এ বসাও।
+মনে রাখার সবচেয়ে সহজ সূত্র
+Root থেকে শুরু করো
+        ↓
+প্রতিটি Node-এ Compare করো
+        ↓
+ছোট হলে Left
+বড়সমান হলে Right
+        ↓
+NULL পাওয়া পর্যন্ত যাও
+        ↓
+শেষ Valid Node-এর Left বা Right-এ নতুন Node বসাও
+
+এই ৫টি ধাপ মনে রাখতে পারলে তুমি যেকোনো সময় নিজে BST insertion-এর কোড লিখতে পারবে।
