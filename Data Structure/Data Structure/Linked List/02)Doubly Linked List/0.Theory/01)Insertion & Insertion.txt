@@ -9,9 +9,10 @@ a) list empty থাওলে
 b) list এ ভ্যালু থাকলে
 
 3) Insert after target node:
-a) Target Node list এ না থাকলে
-b) Target Node list এর শেষে থাকলে tail_insertion হবে
-c) Target Node list এর মাঝের দিকে থাকলে
+a) List Empty থাকলে
+b) Target Node list এ না থাকলে
+c) Target Node list এর শেষে থাকলে tail_insertion হবে
+d) Target Node list এর মাঝের দিকে থাকলে
 
 Node Deletion Criteria:
 
