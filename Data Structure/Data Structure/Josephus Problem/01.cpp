@@ -43,11 +43,11 @@ Node *temp=head;
 Node *x;
 Node *y;
 while(temp!=temp->next){
- for(int i=1; i<k; i++){
+ for(int i=1; i<k-1; i++){
     temp=temp->next;
  }
  x=temp;//target node er ager node
- y=temp->next;//target node;
+ y=x->next;//target node;
  temp=y->next;//target node er porer node
  x->next=temp;
  delete y;
