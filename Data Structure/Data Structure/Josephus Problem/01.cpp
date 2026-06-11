@@ -55,5 +55,5 @@ while(temp!=temp->next){
 cout<<temp->data<<endl;
 }
 int main(){
-    josephus_problem(10,3);
+    josephus_problem(9,3);
 }
